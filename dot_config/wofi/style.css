@@ -1,0 +1,56 @@
+window {
+  opacity: 0.8;
+  margin: 0px;
+  border: 2px solid --wofi-color1;
+  border-radius: 10px;
+  background-color: --wofi-color0;
+  font-family: "DM Sans Medium";
+  font-size: 12px;
+}
+
+#input {
+  margin: 5px;
+  border: 0px solid --wofi-color0;
+  color: --wofi-color7;
+  background-color: --wofi-color0;
+  font-family: "DM Sans Medium";
+  font-size: 20px;
+}
+
+#input image {
+  color: --wofi-color7;
+}
+
+#inner-box {
+  margin: 5px;
+  padding-top: 5px;
+  border-top: 2px solid --wofi-color1;
+  background-color: --wofi-color0;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: --wofi-color0;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: --wofi-color7;
+}
+
+#entry:selected {
+  border-radius: 5px;
+  background-color: --wofi-color1;
+  font-weight: normal;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

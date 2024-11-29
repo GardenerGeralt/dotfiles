@@ -1,0 +1,53 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt extendedglob
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+bindkey -v
+# completion using arrow keys (based on history)
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/misha/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export NEXTCLOUD_PHP_CONFIG=/etc/webapps/nextcloud/php.ini
+export EDITOR=nvim
+
+# Import colorscheme from 'wal' asynchronously
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
+
+alias cd=z
+alias cat=bat
+alias ls="eza -a --sort=type -h --no-user --icons"
+alias ll="eza -a --sort=type -h --no-user --icons -l"
+alias cwp='function _cwp() { 
+abspath=$(realpath "$1");
+killall hyprpaper;
+hyprctl hyprpaper dispatch exec hyprpaper;
+hyprctl hyprpaper preload "$abspath";
+hyprctl hyprpaper wallpaper ", $abspath";
+echo "preload = $abspath" > /home/misha/.config/hypr/hyprpaper.conf; 
+echo "wallpaper = , $abspath" >> /home/misha/.config/hypr/hyprpaper.conf; 
+wal -i "$abspath"; 
+}; _cwp'
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+fastfetch

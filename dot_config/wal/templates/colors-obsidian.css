@@ -1,0 +1,18 @@
+.theme-dark {{
+    --bg1: {color0} !important;
+    --bg2: {color0} !important;
+    --bg3: {color0} !important;
+    --ui1: {color5} !important;
+    --ui2: {color7} !important;
+    --ui3: {color7} !important;
+    --ax1: {color6} !important;
+    --ax2: {color6} !important;
+    --ax3: {color6} !important;
+    --sp1: {color7} !important;
+    --active-line-bg: {color7} !important;
+    --tx1: {color7} !important;
+    --tx2: {color5} !important;
+    --tx3: {color4} !important;
+    --hl1: {color7} !important;
+    --hl2: {color7} !important;
+}}

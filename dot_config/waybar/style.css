@@ -1,0 +1,37 @@
+@import url("/home/misha/.cache/wal/colors-waybar.css");
+
+@define-color foreground @color7;
+@define-color foreground-inactive @color6;
+@define-color background transparent;
+
+* {
+    font-family: DM Sans Medium;
+    font-size: 10px;
+    padding: 0;
+    margin: -1;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button,
+#memory,
+#temperature,
+#clock,
+#pulseaudio,
+#battery,
+#backlight,
+#language,
+#network,
+#bluetooth,
+#tray {
+    padding-left: 1em;
+    padding-right: 1em;
+    opacity: 0.6;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}

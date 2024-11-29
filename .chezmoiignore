@@ -1,0 +1,7 @@
+**/.git/
+**/.git/**/*
+**/cache/
+**/cache/**/*
+
+# Neovim
+**/lazy-lock.json
