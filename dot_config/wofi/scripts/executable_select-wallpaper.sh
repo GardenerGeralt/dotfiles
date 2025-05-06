@@ -16,7 +16,6 @@ killall hyprpaper &
 hyprctl dispatch exec hyprpaper &
 hyprctl hyprpaper preload "$abspath" &
 hyprctl hyprpaper wallpaper ", $abspath" &
-echo "preload = $abspath" > /home/misha/.config/hypr/hyprpaper.conf &
-echo "wallpaper = , $abspath" >> /home/misha/.config/hypr/hyprpaper.conf &
+ln -sf $abspath /home/misha/.current-wallpaper &
 wal -i "$abspath"
 
