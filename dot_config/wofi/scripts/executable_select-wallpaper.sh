@@ -10,12 +10,18 @@ NEW_WALL=$(
     wofi --conf ${CONFIG}
 )
 
-abspath=${NEW_WALL#img:}
+if [ -n "$NEW_WALL" ]; then
+    abspath=${NEW_WALL#img:}
 
-killall hyprpaper &
-hyprctl dispatch exec hyprpaper &
-hyprctl hyprpaper preload "$abspath" &
-hyprctl hyprpaper wallpaper ", $abspath" &
-ln -sf $abspath /home/misha/.current-wallpaper &
-wal -i "$abspath"
+    ln -sf $abspath /home/misha/.current-wallpaper &
+    wal -i "$abspath" &
+
+    killall hyprpaper &
+    hyprctl dispatch exec hyprpaper &
+    hyprctl hyprpaper preload "$abspath" &
+    hyprctl hyprpaper wallpaper ", $abspath" &
+
+    pkill waybar;
+    hyprctl dispatch exec waybar
+fi
 
