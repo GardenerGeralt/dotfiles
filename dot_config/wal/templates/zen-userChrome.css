@@ -1,0 +1,52 @@
+:root {{
+    --color0: {color0};
+    --color1: {color1};
+    --color2: {color2};
+    --color3: {color3};
+    --color4: {color4};
+    --color5: {color5};
+    --color6: {color6};
+    --color7: {color7};
+}}
+
+:root {{
+    --input-color: #ff0000 !important;
+    --urlbarView-separator-color: #00ff00 !important;
+
+    --lwt-accent-color: var(--color0) !important;
+    --lwt-text-color: var(--color7) !important;
+
+    --zen-colors-secondary: var(--color7) !important;
+    --toolbarbutton-icon-fill: var(--color5) !important;
+    --arrowpanel-background: var(--color1) !important;
+    --arrowpanel-color: var(--color7) !important;
+    --arrowpanel-border-color: #ffff00 !important;
+
+    --toolbar-bgcolor: #ff00ff !important;
+    --toolbar-color: var(--color7) !important;
+    --toolbar-field-color: var(--color7) !important;
+
+    --toolbar-field-focus-color: var(--color7) !important;
+
+    --newtab-background-color: #00ffff !important;
+    --newtab-background-color-secondary: #ff0000 !important;
+    --newtab-text-primary-color: #00ff00 !important;
+    --lwt-accent-color-inactive: var(--color0) !important;
+    --tab-selected-bgcolor: #0000ff !important;
+    --tab-selected-textcolor: var(--color7) !important;
+
+    --urlbarView-highlight-background: #ffff00 !important;
+    --sidebar-background-color: #ff00ff !important;
+    --sidebar-text-color: #00ffff !important;
+
+    --tabpanel-background-color: #ff0000 !important;
+    --zen-primary-color: var(--color4) !important;
+
+    --zen-main-browser-background-toolbar: #00ff00 !important;
+    --zen-main-browser-background: var(--color0) !important;
+
+    #urlbar[breakout-extend="true"] > #urlbar-background {{
+        background: var(--color0) !important;
+    }}
+}}
+
