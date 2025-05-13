@@ -10,7 +10,7 @@
 }}
 
 :root {{
-    --input-color: #ff0000 !important;
+    --input-color: var(--color7) !important;
     --urlbarView-separator-color: #00ff00 !important;
 
     --lwt-accent-color: var(--color0) !important;
@@ -22,7 +22,7 @@
     --arrowpanel-color: var(--color7) !important;
     --arrowpanel-border-color: #ffff00 !important;
 
-    --toolbar-bgcolor: #ff00ff !important;
+    --toolbar-bgcolor: var(--color0) !important;
     --toolbar-color: var(--color7) !important;
     --toolbar-field-color: var(--color7) !important;
 
