@@ -39,7 +39,7 @@
     --sidebar-background-color: #ff00ff !important;
     --sidebar-text-color: #00ffff !important;
 
-    --tabpanel-background-color: #ff0000 !important;
+    --tabpanel-background-color: var(--color0) !important;
     --zen-primary-color: var(--color4) !important;
 
     --zen-main-browser-background-toolbar: #00ff00 !important;
