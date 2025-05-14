@@ -42,7 +42,7 @@
     --tabpanel-background-color: var(--color0) !important;
     --zen-primary-color: var(--color4) !important;
 
-    --zen-main-browser-background-toolbar: #00ff00 !important;
+    --zen-main-browser-background-toolbar: var(--color0) !important;
     --zen-main-browser-background: var(--color0) !important;
 
     #urlbar[breakout-extend="true"] > #urlbar-background {{
