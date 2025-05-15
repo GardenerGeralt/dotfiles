@@ -7,7 +7,7 @@ WALLPAPERS_PATH=$HOME/Wallpaper
 NEW_WALL=$(
     find $WALLPAPERS_PATH -type f |
     sed 's/^/img:/' |
-    wofi --conf ${CONFIG}
+    wofi -n --conf ${CONFIG}
 )
 
 if [ -n "$NEW_WALL" ]; then
