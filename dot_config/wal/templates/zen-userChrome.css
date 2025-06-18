@@ -20,7 +20,7 @@
     --toolbarbutton-icon-fill: var(--color5) !important;
     --arrowpanel-background: var(--color1) !important;
     --arrowpanel-color: var(--color7) !important;
-    --arrowpanel-border-color: #ffff00 !important;
+    --arrowpanel-border-color: var(--color7) !important;
 
     --toolbar-bgcolor: var(--color0) !important;
     --toolbar-color: var(--color7) !important;
@@ -36,8 +36,8 @@
     --tab-selected-textcolor: var(--color7) !important;
 
     --urlbarView-highlight-background: #ffff00 !important;
-    --sidebar-background-color: #ff00ff !important;
-    --sidebar-text-color: #00ffff !important;
+    --sidebar-background-color: var(--color5) !important;
+    --sidebar-text-color: var(--color0) !important;
 
     --tabpanel-background-color: var(--color0) !important;
     --zen-primary-color: var(--color4) !important;
