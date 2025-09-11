@@ -6,6 +6,9 @@ local act = wezterm.action
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+-- Because scaling is not working
+config.enable_wayland = false
+
 config.color_scheme_dirs = { "/home/misha/.cache/wal/" }
 config.color_scheme = 'colors'
 
