@@ -5,7 +5,8 @@
     "color": {"1": "blue"},
     "padding": {
       "top": 1,
-      "left": 2
+      "left": 2,
+      "right": 0
     }
   },
   "modules": [

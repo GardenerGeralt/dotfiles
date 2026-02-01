@@ -2,7 +2,8 @@
 
 @define-color foreground @color7;
 @define-color foreground-inactive @color6;
-@define-color background transparent;
+@define-color background @color0;
+@define-color background-focused @color8;
 
 * {
     font-family: DM Sans Medium;
@@ -13,7 +14,7 @@
 
 #waybar {
     color: @foreground;
-    background-color: @background;
+    background: @background;
 }
 
 #workspaces button,
@@ -35,3 +36,8 @@
 #workspaces button.empty {
     color: @foreground-inactive;
 }
+
+#workspaces button:hover {
+    background: @background-focused;
+}
+

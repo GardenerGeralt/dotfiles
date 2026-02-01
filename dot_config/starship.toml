@@ -41,7 +41,7 @@ color7 = "white"
 
 [os]
 disabled = false
-style = "bg:color5 fg:color7"
+style = "bg:color5 fg:color0"
 
 [os.symbols]
 Windows = "󰍲"
@@ -67,12 +67,12 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:color5 fg:color7"
-style_root = "bg:color5 fg:color7"
+style_user = "bg:color5 fg:color0"
+style_root = "bg:color5 fg:color0"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color7 bg:color4"
+style = "fg:color0 bg:color4"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -87,56 +87,56 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:color3"
-format = '[[ $symbol $branch ](fg:color7 bg:color3)]($style)'
+format = '[[ $symbol $branch ](fg:color0 bg:color3)]($style)'
 
 [git_status]
 style = "bg:color3"
-format = '[[($all_status$ahead_behind )](fg:color7 bg:color3)]($style)'
+format = '[[($all_status$ahead_behind )](fg:color0 bg:color3)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [c]
 symbol = " "
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [php]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [java]
 symbol = " "
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [kotlin]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [haskell]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [python]
 symbol = ""
 style = "bg:color2"
-format = '[[ $symbol( $version) ](fg:color7 bg:color2)]($style)'
+format = '[[ $symbol( $version) ](fg:color0 bg:color2)]($style)'
 
 [docker_context]
 symbol = ""

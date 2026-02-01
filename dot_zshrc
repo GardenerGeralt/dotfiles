@@ -25,30 +25,26 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export NEXTCLOUD_PHP_CONFIG=/etc/webapps/nextcloud/php.ini
 export EDITOR=nvim
 
 # Import colorscheme from 'wal' asynchronously
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 
+alias v=nvim
 alias cd=z
-alias cat=bat
-alias ls="eza -a --sort=type -h --no-user --icons"
+alias cat="bat --theme base16"
+alias ls="eza -a --sort=type -h --no-user --icons auto"
 alias ll="eza -a --sort=type -h --no-user --icons -l"
-alias cwp='function _cwp() { 
-abspath=$(realpath "$1");
-killall hyprpaper;
-hyprctl hyprpaper dispatch exec hyprpaper;
-hyprctl hyprpaper preload "$abspath";
-hyprctl hyprpaper wallpaper ", $abspath";
-echo "preload = $abspath" > /home/misha/.config/hypr/hyprpaper.conf; 
-echo "wallpaper = , $abspath" >> /home/misha/.config/hypr/hyprpaper.conf; 
-wal -i "$abspath"; 
-}; _cwp'
+alias fabric='fabric-ai'
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 fastfetch
 [ -f /opt/miniforge/etc/profile.d/conda.sh ] && source /opt/miniforge/etc/profile.d/conda.sh
+
+if [[ -z "$TMUX" ]]; then
+  tmux new-session -A -s main
+fi
+
