@@ -1,0 +1,6 @@
+  [Unit]
+  Description=Reminder: %i
+
+  [Service]
+  Type=oneshot
+  ExecStart=/bin/sh -c 'notify-send "Reminder" "$(cat ~/.config/reminders/%i)"'

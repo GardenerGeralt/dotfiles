@@ -5,7 +5,7 @@
 
 (defsrc
   f2
-  caps a s d f j k l ;
+  caps a s d f j k l ; '
 )
 (defvar
   tap-time 200
@@ -21,14 +21,15 @@
   k (tap-hold $tap-time $hold-time k rsft)
   l (tap-hold $tap-time $hold-time l ralt)
   ; (tap-hold $tap-time $hold-time ; rmet)
+  ' (tap-hold $tap-time $hold-time ' prtsc)
 )
 
 (deflayer base
   (layer-switch minecraft)
-  esc @a @s @d @f @j @k @l @;
+  esc @a @s @d @f @j @k @l @; @'
 )
 
 (deflayer minecraft
   (layer-switch base)
-  lctl a s d f j k l ;
+  lctl a s d f j k l ; '
 )

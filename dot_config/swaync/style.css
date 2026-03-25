@@ -1,0 +1,33 @@
+@import '../../.cache/wal/colors-waybar.css';
+@define-color text            @foreground;
+@define-color background-alt  @color8;
+
+* {
+  all: unset;
+  color: @text;
+  font-size: 14px;
+  font-family: "DM Sans Mono";
+  transition: 200ms;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+  background: @background;
+  border: 2px solid @background-alt;
+  border-radius: 0px;
+  margin: 4px;
+  padding: 2px;
+}
+
+.summary {
+  font-weight: 800;
+}
+
+.body {
+  font-weight: 400;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button {
+  margin: 2px;
+  padding: 0px;
+  background-color: @selected;
+}

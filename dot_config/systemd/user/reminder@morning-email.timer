@@ -1,0 +1,9 @@
+[Unit]
+Description=Good morning! It's time to check your email.
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 09:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
